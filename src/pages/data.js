@@ -46,7 +46,8 @@ export const data = {
         footer_text:"Biz ularga javob berishdan yoki kerakli ma'lumotlarni taqdim etishdan mamnun bo'lamiz.",
 
         footer_link_1:"Hamkor bo'ling ",
-        footer_link_2:"Banklar uchun ma'lumot"
+        footer_link_2:"Banklar uchun ma'lumot",
+        footer_network:"Open ijtimoiy tarmoqlarda"
     },
     ru:{
         nav_link_1:"предприятиям",
@@ -95,7 +96,8 @@ export const data = {
         footer_text:"Мы с радостью ответим на них или предоставим необходимую информацию.",
 
         footer_link_1:"Стать партнером",
-        footer_link_2:"Для банков"
+        footer_link_2:"Для банков",
+        footer_network:"Open в соцсетях"
       }
 }
 

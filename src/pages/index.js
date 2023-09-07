@@ -150,7 +150,7 @@ export default function Home() {
                   <Link href="/">{langData.nav_link_4}</Link>
                 </li>
                 <li className="lg:ml-[60px] md:ml-[40px]">
-                  <Link href="/openCard/#store">{langData.nav_link_1}</Link>
+                  <Link href="/openCard/">{langData.nav_link_1}</Link>
                 </li>
                 <li className="lg:ml-[60px] md:ml-[40px]">
                   <Link href="/openCard/#bank">{langData.nav_link_2}</Link>
@@ -166,11 +166,11 @@ export default function Home() {
               }
             >
               <ul className="flex uppercase">
-                <li className="lg:ml-[60px] md:ml-[40px]">
+                <li className="lg:ml-[60px] md:ml-[40px] mb-3">
                   <Link href="/">{langData.nav_link_4}</Link>
                 </li>
                 <li className="lg:ml-[60px] mb-3 ">
-                  <Link href="#store">{langData.nav_link_3}</Link>
+                  <Link href="/openCard">{langData.nav_link_3}</Link>
                 </li>
                 <li className="lg:ml-[60px] mb-3">
                   <Link href="#bank">{langData.nav_link_2}</Link>
@@ -495,14 +495,14 @@ export default function Home() {
         </div>
       </section> */}
 
-      <footer className="_container h-[480px] md:h-[283px] lg:h-[375px] bg-main_violet md:bg-inherit text-white md:text-black rounded-xl rounded-b-none overflow-hidden md:mb-[30px]">
+      <footer className="_container h-[530px] md:h-[283px] lg:h-[375px] bg-main_violet md:bg-inherit text-white md:text-black rounded-xl rounded-b-none overflow-hidden md:mb-[30px]">
         <div className=" h-full relative md:py-[26px]">
           <div className="absolute md:static z-10 md:w-1/2  ml-auto mr-0 h-full flex items-center px-[10px] sm:px-4 md:px-0">
             <div className="pt-[60px] pb-[10px]">
               <h2 className="text-[28px] leading-[38px] sm:text-[30px] sm:leading-[40px] font-normal">
                 {langData.footer_title}
               </h2>
-              <div className="mt-[30px] mb-[80px] text-base w-[90%] leading-[21px] font-medium md:mb-0 md:mt-[60px]">
+              <div className="mt-[30px] mb-[60px] text-base w-[90%] leading-[21px] font-medium md:mb-0 md:mt-[60px]">
                 <p>{langData.footer_text}</p>
                 <div className="flex mt-[30px]">
                   <img
@@ -517,6 +517,14 @@ export default function Home() {
                   />
                   <a href="tel:+998712001545">+ 998 71 200 15 45</a>
                 </div>
+                <p className="mt-[30px] md:hidden">{langData.footer_network}</p>
+                <div className="flex items-center mt-7 mb-[20px] font-medium md:hidden">
+                  <a href="https://www.instagram.com/opencard.uz/" target="_blank"><img src={"/images/instagram.png"} className="mr-[20px]" alt="" /></a>
+                  <a href="https://www.facebook.com/opencard.uz" target="_blank"><img src={"/images/facebook.png"} className="mr-[20px]" alt="" /></a>
+                  <a href="https://t.me/openrassrochka" target="_blank"><img src={"/images/telegram.png"} className="mr-[20px]" alt="" /></a>
+                  <a href="https://www.youtube.com/channel/UCK_l3X6oOcx1G1dlMWCPldg" target="_blank"><img src={"/images/youtube.png"} className="mr-[20px]" alt="" /></a>
+                  <a href="https://www.linkedin.com/in/open-tech-a13367283" target="_blank"><img src={"/images/linkedin.png"} className="mr-[20px]" alt="" /></a>
+                </div>
               </div>
               <a
                 className="scan_btn flex items-center rounded-xl py-5 px-6 pr-4 text-base font-medium md:hidden"
@@ -528,7 +536,9 @@ export default function Home() {
                 <p>{langData.header_scan}</p>
               </a>
 
-              <div className="flex justify-between w-3/4 mt-[80px] text-[#4E0F8A]">
+              
+
+              <div className="w-full flex justify-between mt-8 mb-[50px] text-white md:text-main_violet md:mt-4">
                 <Link
                   className="underline underline-offset-[8px]"
                   href={"/openCard/#store"}
@@ -556,6 +566,25 @@ export default function Home() {
           </div>
         </div>
       </footer>
+
+      <div className="footer mt-[100px] py-[78px] hidden md:flex">
+        <div className="container gap-4">
+          <div className="flex justify-center">
+            <div className="bg-[#F4F5F7] w-[525px] rounded-xl text-black py-8 flex items-center justify-center px-2.5 sm:p-[30px] ">
+              <div className="">
+                <p className="uppercase font-medium sm:text-[18px] lg:text-[20px] text-center">{langData.footer_network}</p>
+                <div className="flex items-center mt-7 mb-[20px] font-medium">
+                  <a href="https://www.instagram.com/opencard.uz/" target="_blank"><img src={"/images/instagram.png"} className="mr-[20px]" alt="" /></a>
+                  <a href="https://www.facebook.com/opencard.uz" target="_blank"><img src={"/images/facebook.png"} className="mr-[20px]" alt="" /></a>
+                  <a href="https://t.me/openrassrochka" target="_blank"><img src={"/images/telegram.png"} className="mr-[20px]" alt="" /></a>
+                  <a href="https://www.youtube.com/channel/UCK_l3X6oOcx1G1dlMWCPldg" target="_blank"><img src={"/images/youtube.png"} className="mr-[20px]" alt="" /></a>
+                  <a href="https://www.linkedin.com/in/open-tech-a13367283" target="_blank"><img src={"/images/linkedin.png"} className="mr-[20px]" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }

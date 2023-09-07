@@ -152,7 +152,7 @@ function App() {
 
             <div className={!navbarIsActive ? "my_navbar_links md:hidden" : "my_navbar_links my_navbar_links-active"}>
               <ul className="flex uppercase">
-                <li className="lg:ml-[60px] md:ml-[40px]"><Link href="/">{langData.nav_link_4}</Link></li>
+                <li className="lg:ml-[60px] md:ml-[40px] mb-3"><Link href="/">{langData.nav_link_4}</Link></li>
                 <li className="lg:ml-[60px] mb-3 "><Link href="#store">{langData.nav_link_3}</Link></li>
                 <li className="lg:ml-[60px] mb-3"><Link href="#bank">{langData.nav_link_2}</Link></li>
               </ul>
